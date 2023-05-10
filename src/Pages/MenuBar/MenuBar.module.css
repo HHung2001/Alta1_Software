@@ -1,0 +1,140 @@
+.MenuListBar {
+    position: absolute;
+    box-shadow: 0px 4px 6px rgba(180, 151, 151, 0.5);
+    border-radius: 16px 0px 0px 16px;
+    height: 810px;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF;
+}
+
+.ALogo img{
+    /* phần hình logo */
+    position: absolute;
+    width: 80px;
+    height: 64px;
+    left: 60px;
+    top: 32px;
+}
+
+.MenuBar img {
+    /* phần toàn bộ hình trong menubar */
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 4px;
+    height: 20px;
+    width: 20px;
+}
+
+.MenuBar a {
+    /* phần toàn thẻ a trong menubar */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 42px;
+    line-height: 24px;
+    color: #7d7979;
+}
+.ItemDashBoard a {
+    color: #1b1b1c;
+    text-decoration: none;
+}
+
+.ItemDashBoard {
+    /* phần dashboard trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 150px;
+    left: -33px;
+    background: #FFFFFF;
+}
+.ItemDashBoard :hover{
+    background-color: #FF7506;
+}
+/* .ItemDashBoard Link {
+    text-decoration: none;
+} */
+
+.ItemThiebi {
+     /* phần thietbi trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 204px;
+    left: -46px;
+} 
+.ItemThiebi :hover{
+    background-color: #FF7506;
+}
+.ItemThiebi a {
+    color: #1b1b1c;
+    text-decoration: none;
+}
+/* .ItemThiebi Link {
+    text-decoration: none;
+} */
+.ItemDichvu {
+     /* phần dichvu trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 258px;
+    left: -46px;
+} 
+.ItemDichvu  a {
+    color: #1b1b1c;
+    text-decoration: none;
+}
+.ItemCapso {
+     /* phần capso trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 312px;
+    left: -46px;
+}
+.ItemCapso a {
+    color: #1b1b1c;
+}
+.ItemBaocao {
+     /* phần baocao trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 366px;
+    left: -46px;
+}
+.ItemBaocao  a {
+    color: #1b1b1c;
+}
+.ItemCaidat {
+     /* phần caidat trong menubar */
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: -18px;
+    top: 420px;
+}
+.ItemCaidat a {
+    color: #1b1b1c;
+}
+.BtnLogout button {
+     /* phần button logout trong menubar */
+    position: absolute;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    width: 170px;
+    height: 49px;
+    top: 732px;
+    left: 12px;
+    background: #FFF2E7;
+    border-color: #FF7506;
+    color: #FF7506;
+}

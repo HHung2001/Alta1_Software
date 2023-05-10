@@ -1,0 +1,406 @@
+.login{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+  .BoxLogin {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      height: 217%;
+      flex-direction: column;
+      background-color: #f6f6f6;
+    /* position: relative;
+    width: 750px;
+    height: 810px;
+    background: #F7F7F7; */
+    }
+    
+  /* .form-group {
+      margin-bottom: 20px;
+    } */
+    
+  /* .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    } */
+  .LogoLeft img{
+      position: absolute;
+      width: 170px;
+      height: 136px;
+      left: 208px;
+      top: 82px;
+    }
+    /* input[type='text'],
+    input[type='password'] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    } */
+  /* .Input{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 4px;
+      
+      position: absolute;
+      width: 400px;
+      height: 75px;
+      left: 94px;
+      top: 293px;
+    
+      width: 133px;
+      height: 27px;
+    
+   
+    
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      
+    
+      color: #37474F;
+    
+     
+    
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    } */
+     /* .Input input{
+      height: 44px;
+      width: 400px;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }  */
+    /* .password-input {
+      position: relative;
+    } */
+    /* .Pass{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 94px;
+    top: 384px;
+    border-color: black;
+    } */
+    /* .Pass input{
+      height: 25px;
+    } */
+    /* .BtnLogin button{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 215px;
+    top: 511px;
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    } */
+    /* .errormessage{
+      position: relative;
+      margin-top: 5px;
+      color: red;
+    } */
+    /* .errormessage::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: red;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    } */
+    
+    /* .errormessage.visible::before {
+      transform: scaleX(1);
+    } */
+    /* .PassForgot{
+  
+    position: absolute;
+    width: 102px;
+    height: 21px;
+    left: 94px;
+    top: 471px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #E73F3F;
+    } */
+    /* .PassForgot Link{
+      color: #E73F3F;
+      text-decoration: none;
+      
+    } */
+    /* .password-toggle {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #666;
+      cursor: pointer;
+    } */
+  .LogoRight{
+      position: absolute;
+    width: 848px;
+    height: 810px;
+    left: 592px;
+    top: 0px;
+    background: #FFFFFF;
+    }
+  .LogoRight img{
+    /* Group 341 */
+    position: absolute;
+    width: 605px;
+    height: 614.06px;
+    left: 79px;
+    top: 112.94px;
+    right: 164px;
+    }
+  .TextRight {
+    position: absolute;
+    width: 142px;
+    height: 54px;
+    left: 1046px;
+    top: 407px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    color: #FF7506;
+    }
+  /* .TextRights h1{
+    position: absolute;
+    width: 361px;
+    height: 54px;
+    left: 1046px;
+    top: 454px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 35px;
+    line-height: 154px;
+    text-align: center;
+    color: #FF7506;
+    } */
+  .eyes{
+      position: absolute;
+      left: 505px;
+      top: 385px;
+      cursor: pointer;
+  }
+  /* .eyePass:hover{
+      opacity: 0.8;
+  } */
+  .formlogin{
+    margin-top: 250px;
+  }
+  .textlabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 400px;
+    height: 75px;
+  }
+  .text{
+    box-sizing: border-box;
+  
+      /* Auto layout */
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0px 10px 12px;
+      gap: 10px;
+      margin-top: -20px;
+      width: 400px;
+      height: 44px;
+  
+      /* white */
+  
+      background: #ffffff;
+      /* Gray/$-gray-100 */
+  
+      border: 1.5px solid #d4d4d7;
+      border-radius: 8px;
+  
+      /* Inside auto layout */
+  
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+  }
+  .pass{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 15px;
+  
+      gap: 4px;
+  
+      width: 400px;
+      height: 75px;
+  }
+  .textError, .passError{
+    border: 1px solid red;
+    box-sizing: border-box;
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 10px 12px;
+    gap: 10px;
+    margin-top: -20px;
+    width: 400px;
+    height: 44px;
+  
+    /* white */
+  
+    background: #ffffff;
+    /* Gray/$-gray-100 */
+  
+  
+    border-radius: 8px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .passtext{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px 10px 12px;
+    gap: 10px;
+    margin-top: -20px;
+    width: 400px;
+    height: 44px;
+  
+    /* white */
+  
+    background: #ffffff;
+    /* Gray/$-gray-100 */
+  
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  /* errorpasscode */
+  .errorPassCode{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 300px;
+    height: 31px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #e73f3f;
+    text-decoration: #d4d4d7;
+  }
+  /* errorForgotPass */
+  .errorForgotPass{
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  
+  /* forgetPass */
+  .forgetPass{
+    width: 250px;
+    height: 21px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #e73f3f;
+  }
+  .forgetPass:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* button đăng nhập */
+  .ButtonDN{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    border-radius: 8px;
+    flex-direction: row;
+    font-size: 18px;
+    width: 162px;
+    height: 40px;
+    margin-top: 0px;
+    padding: 10px 24px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px #e7e9f2;
+    background: #ff9138;
+    color: white;
+  }
+  
+  /* FORGOTPASSNEW */
+  .PassForgotNew{
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 21px;
+    margin-top: 10px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #e73f3f;
+  }
+  .PassForgotNew:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }

@@ -1,0 +1,241 @@
+    /* danh sach thiet bi */
+    .Text h1 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        position: absolute;
+        width: 38%;
+        height: 81px;
+        top: 104px;
+        line-height: 20px;
+        color: #FF7506;
+    }
+       /* hộp trạng thái hoạt động */
+    .Combobox {
+        position: absolute;
+        width: 300px;
+        height: 44px;
+        left: 224px;
+        top: 184px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        /* gap: 24px; */
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D7;
+        border-radius: 8px;
+    }
+    .Combobox h2 {
+        position: absolute;
+        width: 152px;
+        height: 24px;
+        left: 1px;
+        top: -45px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    .Combobox select {
+        position: absolute;
+        width: 300px;
+        height: 44px;
+        left: 0px;
+        top: 0px;
+        size: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        background: #FFFFFF;
+        border: 1.5px solid #FFAC6A;
+        border-radius: 8px;
+    }
+        /* hộp trạng thái kết nối */
+    .Combobox2 h2 {
+        position: absolute;
+        width: 126px;
+        height: 24px;
+        left: 548.97px;
+        top: 144px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    .Combobox2 select {
+        position: absolute;
+        width: 300px;
+        height: 44px;
+        left: 548px;
+        top: 184px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        size: 30px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1.5px solid #FFAC6A;
+    }
+    
+    /* search */
+    .MenuSearch {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px 10px 12px;
+        gap: 10px;
+        position: absolute;
+        left: 1300px;
+        top: 184px;
+    }
+    .MenuSearch h2{
+        position: absolute;
+        width: 62px;
+        height: 23.96px;
+        right: 256px;
+        top: -30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    /* bang */
+    table {
+        position: absolute;
+        overflow: hidden;
+        width: 1400px;
+        margin: 10px 35px;
+        left: 185px;
+        top: 230px;
+        border-radius: 12px;
+    }
+    th,td {
+        text-align: left;
+    }
+    .More{
+        text-decoration: none;
+        text-align: center;
+    }
+    .link{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Update{
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    td > a{
+        border-bottom: 5px ;
+    }
+    th {
+        border: 1px solid #FFE3CD;
+        width: 150px;
+        height: 49px;
+        background: #FF9138;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .Text2 {
+        width: 191px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .Handle1{
+        margin: 5px 10px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+    .TextTitle{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: 'Nunito';
+        font-style: normal;
+        color: #535261;
+    }
+    /* trạng thái ngưng hoat dong */
+    .conditionA{
+        display: flex;
+    }
+    .statusConnect{
+        height: 10px;
+        width: 10px;
+        margin: 18px 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .Connect{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 12px;
+        color: #535261;
+    }
+    .conditionConnect{
+        display: flex;
+    }
+    .actionsSuccess{
+        width: 10px;
+        height: 10px;
+        margin: 18px 10px;
+        border-radius: 50%;
+        background-color: green;
+    }
+    .titleSuccess{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+        margin-top: 12px;
+        color: #535261;
+    }
+    .Phantrang{
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 5px;
+        width: 288px;
+        height: 32px;
+        left: 1300px;
+        top: 55rem;
+        /* color: #FF7506;
+        border-color: orange; */
+        /* background-color: rgb(203, 199, 194); */
+        border-radius: 5px;
+        /* background: #FF7506; */
+    }
+    tr:nth-child(2n) {
+        background-color: #FFF2E7;
+    }
