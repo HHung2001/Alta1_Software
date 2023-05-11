@@ -53,7 +53,7 @@ const ForgotPass: React.FC  =() => {
           <label className={classes.forgetlabel}>
             <h3 className={classes.passname}>Đặt lại mật khẩu</h3>
             <p>Vui lòng nhập email để đặt lại mật khẩu của bạn *</p>
-            <Input className={classes.Textemail} type="text" onChange={(e) => setEmail(e.target.value)} />
+            <input className={classes.Textemail} type="text" onChange={(e) => setEmail(e.target.value)} />
           </label>
 
           <div></div>
@@ -70,10 +70,6 @@ const ForgotPass: React.FC  =() => {
               <p className={classes.errorM}>
               {errorMessage}
               </p>
-           
-
-           {errorMessage}
-
           </div>
         </div>
       </div>
@@ -83,11 +79,7 @@ const ForgotPass: React.FC  =() => {
                   <img src={LogoRight}></img>
                 </div>
         </div>
-        <div className={classes.BoxForgotPassRight}>
-                <div className={classes.BoxLogoRight}>
-                  <img src={LogoRight}></img>
-                </div>
-        </div>
+        
         
     </div>
   );

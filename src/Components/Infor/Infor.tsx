@@ -6,6 +6,7 @@ import Camera from '../../assets/Image/Camera.png'
 import MenuBar from '../../Pages/MenuBar/MenuBar'
 import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
 const Infor =() =>{
+  
     return (
         <div className={classes.Infor}>
         {/*Phần menubar nằm trong phần pages  */}

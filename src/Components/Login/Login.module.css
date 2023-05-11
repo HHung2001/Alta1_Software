@@ -7,7 +7,7 @@
       justify-content: center;
       align-items: center;
       align-self: center;
-      height: 217%;
+      height: 208%;
       flex-direction: column;
       background-color: #f6f6f6;
     /* position: relative;
@@ -216,7 +216,7 @@
     } */
   .eyes{
       position: absolute;
-      left: 505px;
+      left: 469px;
       top: 385px;
       cursor: pointer;
   }
