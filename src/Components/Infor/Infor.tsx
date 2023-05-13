@@ -5,8 +5,9 @@ import Avatar from '../../assets/Image/img.jpg'
 import Camera from '../../assets/Image/Camera.png'
 import MenuBar from '../../Pages/MenuBar/MenuBar'
 import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
-const Infor =() =>{
-  
+import { useParams } from 'react-router-dom';
+const Infor: React.FC =() =>{
+  const { userId } = useParams<{ userId: string }>();
     return (
         <div className={classes.Infor}>
         {/*Phần menubar nằm trong phần pages  */}

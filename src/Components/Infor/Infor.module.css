@@ -8,14 +8,14 @@
     left: 225px;
     background: #FFFFFF;
 }
-.BoxContentsLeft {
+.BoxContentsLeft p{
     /* noi dung ben trai */
     width: 40%;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    margin-left: 24px;
+    font-size: 30px;
+    margin-left: 250px;
     margin-top: 29px;
     line-height: 30px;
     color: #FF9138;

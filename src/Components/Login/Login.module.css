@@ -216,7 +216,7 @@
     } */
   .eyes{
       position: absolute;
-      left: 469px;
+      left: 500px;
       top: 385px;
       cursor: pointer;
   }
@@ -361,6 +361,7 @@
     font-size: 16px;
     line-height: 40px;
     color: #e73f3f;
+ 
   }
   .forgetPass:hover{
     cursor: pointer;
@@ -368,8 +369,8 @@
   }
   
   /* button đăng nhập */
-  .ButtonDN{
-    display: flex;
+  .ButtonDN button{
+    /* display: flex; */
     justify-content: center;
     gap: 8px;
     align-items: center;

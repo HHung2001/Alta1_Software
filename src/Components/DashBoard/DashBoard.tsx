@@ -1,13 +1,17 @@
 import React from 'react'
 import classes from '../DashBoard/DashBoard.module.css'
-import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
+
 import MenuBar from '../../Pages/MenuBar/MenuBar'
+import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
 
 const DashBoard =() => {
   return (
     <div className='App'>
+
         <MenuBar></MenuBar>
+
         <TopMenuBar></TopMenuBar>
+
     </div>
   );
 };

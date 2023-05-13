@@ -5,7 +5,9 @@ import { Input } from 'antd';
 import classes from './ThietBi.module.css'
 import MenuBar from '../../Pages/MenuBar/MenuBar'
 import { Link } from 'react-router-dom';
+import Add from '../../assets/Image/AddTB.png'
 import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
+import Vector from '../../assets/Image/V.png'
 const ThietBi =() => {
 
     const [choose1, setValue1] = useState('designation1');
@@ -29,7 +31,8 @@ const ThietBi =() => {
             </div>
            
             <div className={classes.Text}>
-                <h1>Danh sách thiết bị</h1>
+            <h1>Thiết bị <img src={Vector}></img> Danh sách thiết bị </h1>
+                <h2>Danh sách thiết bị</h2>
             </div>
 
             {/* hop trang thai 1 */}
@@ -325,6 +328,10 @@ const ThietBi =() => {
                         <div className={classes.Phantrang}>
                                         <Pagination 
                                         defaultCurrent={1} total={50} />
+                        </div>
+                        <div className={classes.ThemTB}>
+                        
+                        <Link to='/ThemTB'><img src={Add} />Thêm Thiết Bị</Link>
                         </div>
         </div>
     );

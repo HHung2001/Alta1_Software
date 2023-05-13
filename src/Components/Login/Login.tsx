@@ -12,22 +12,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { database } from '../../firebase';
 import { child, get, ref } from 'firebase/database';
 import waring from "../../assets/Image/warning.png";
-interface User{
-  userName: string;
-  password: string;
-}
-const dbRef = ref(database);
+// interface User{
+//   userName: string;
+//   password: string;
+// }
+// const dbRef = ref(database);
 
-get(child(dbRef, `users`)).then((snapshot) => {
-  if (snapshot.exists()) {
-    const data = (snapshot.val());
-    console.log(data);
-  } else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
+// get(child(dbRef, `users`)).then((snapshot) => {
+//   if (snapshot.exists()) {
+//     const data = (snapshot.val());
+//     console.log(data);
+//   } else {
+//     console.log("No data available");
+//   }
+// }).catch((error) => {
+//   console.error(error);
+// });
 
 
 const Login = () => {
@@ -37,33 +37,33 @@ const Login = () => {
   //thanh điều hướng
   const navigate = useNavigate();
 
-const handleLogin = async () => {
-  try{
-        const userRef = database.ref("users").orderByChild("userName").equalTo(userName);
-        const snapshot = await userRef.once('value');
-        const userData = snapshot.val();
-        if (!userData) 
-        {
-          setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
-          return;
-        }
+// const handleLogin = async () => {
+//   try{
+//         const userRef = database.ref("users").orderByChild("userName").equalTo(userName);
+//         const snapshot = await userRef.once('value');
+//         const userData = snapshot.val();
+//         if (!userData) 
+//         {
+//           setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
+//           return;
+//         }
 
-        const userId = Object.keys(userData)[0];
-        const user = userData[userId] as User;
-        if(user.password.toString()!==password)
-        {
-          setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
-          return;
-        }
+//         const userId = Object.keys(userData)[0];
+//         const user = userData[userId] as User;
+//         if(user.password.toString()!==password)
+//         {
+//           setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
+//           return;
+//         }
 
-        // dang nhap thanh công
-        navigate(`/Infor/${userId}`);
+//         // dang nhap thanh công
+//         navigate(`/Infor/${userId}`);
 
-  }catch (error) {
-    console.error(error);
-    setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
-  }  
-};
+//   }catch (error) {
+//     console.error(error);
+//     setErrorMessage("Sai mật khẩu hoặc tên đăng nhập");
+//   }  
+// };
 
    //phần hiển thị/ ẩn mật khẩu 
    const [showPass, setShowPass] = useState(false);
@@ -141,9 +141,13 @@ const handleLogin = async () => {
           
           
         </form>
-        <button className={classes.ButtonDN} type="submit"onClick={handleLogin}>
+        <div className={classes.ButtonDN}>
+                    <Link to="/Infor"><button>Đăng nhập</button></Link>
+                </div>
+        {/* <button 
+        className={classes.ButtonDN} type="submit">
               Đăng nhập
-            </button>
+            </button> */}
 
             <div>
             <Link className="link-nav" to="/ForgotPass">

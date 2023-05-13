@@ -1,140 +1,68 @@
-.MenuListBar {
+.TopBarMenu {
+    display: flex;
     position: absolute;
-    box-shadow: 0px 4px 6px rgba(180, 151, 151, 0.5);
-    border-radius: 16px 0px 0px 16px;
-    height: 810px;
-    width: 200px;
+    left: 200px;
     top: 0px;
-    left: 0px;
-    background: #FFFFFF;
+    width: 1240px;
+    height: 88px;
 }
-
-.ALogo img{
-    /* phần hình logo */
-    position: absolute;
-    width: 80px;
-    height: 64px;
-    left: 60px;
-    top: 32px;
-}
-
-.MenuBar img {
-    /* phần toàn bộ hình trong menubar */
-    position: absolute;
-    margin-left: 16px;
-    margin-top: 4px;
-    height: 20px;
-    width: 20px;
-}
-
-.MenuBar a {
-    /* phần toàn thẻ a trong menubar */
+.Boximgleft img{
+    width: 40%;
     font-family: 'Nunito';
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    margin-left: 42px;
-    line-height: 24px;
-    color: #7d7979;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 24px;
+    margin-top: 29px;
+    line-height: 30px;
+    color: #FF9138;
 }
-.ItemDashBoard a {
-    color: #1b1b1c;
-    text-decoration: none;
-}
-
-.ItemDashBoard {
-    /* phần dashboard trong menubar */
+.ImageRing img {
+    /* hình ảnh cái chuông */
     position: absolute;
-    width: 200px;
-    height: 48px;
-    top: 150px;
-    left: -33px;
-    background: #FFFFFF;
-}
-.ItemDashBoard :hover{
-    background-color: #FF7506;
-}
-/* .ItemDashBoard Link {
-    text-decoration: none;
-} */
-
-.ItemThiebi {
-     /* phần thietbi trong menubar */
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    top: 204px;
-    left: -46px;
-} 
-.ItemThiebi :hover{
-    background-color: #FF7506;
-}
-.ItemThiebi a {
-    color: #1b1b1c;
-    text-decoration: none;
-}
-/* .ItemThiebi Link {
-    text-decoration: none;
-} */
-.ItemDichvu {
-     /* phần dichvu trong menubar */
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    top: 258px;
-    left: -46px;
-} 
-.ItemDichvu  a {
-    color: #1b1b1c;
-    text-decoration: none;
-}
-.ItemCapso {
-     /* phần capso trong menubar */
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    top: 312px;
-    left: -46px;
-}
-.ItemCapso a {
-    color: #1b1b1c;
-}
-.ItemBaocao {
-     /* phần baocao trong menubar */
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    top: 366px;
-    left: -46px;
-}
-.ItemBaocao  a {
-    color: #1b1b1c;
-}
-.ItemCaidat {
-     /* phần caidat trong menubar */
-    position: absolute;
-    width: 200px;
-    height: 48px;
-    left: -18px;
-    top: 420px;
-}
-.ItemCaidat a {
-    color: #1b1b1c;
-}
-.BtnLogout button {
-     /* phần button logout trong menubar */
-    position: absolute;
-    border-radius: 8px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    width: 170px;
-    height: 49px;
-    top: 732px;
-    left: 12px;
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+    top: -4px;
+    right: 164px;
     background: #FFF2E7;
-    border-color: #FF7506;
-    color: #FF7506;
+}
+.ImageAvatar img {
+    /* hình ảnh avatar */
+    position: absolute;
+    border-radius: 48px;
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    right: 112px;
+}
+.BoxContentsRight {
+    /* noi dung ben phai */
+    font-family: 'Nunito';
+    font-style: normal;
+    margin-left: 1140px;
+    margin-top: 10px;
+}
+.Hello{
+    /* Xin chào */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 54px;
+    margin: 15px 0;
+    color: #7E7D88;
+    margin-right: -1118%;
+}
+.Name{
+    /* Tên */
+    position: absolute;
+    font-family: 'Nunito';
+    font-style: normal;
+    left: 92%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0px;
+    top: 45px;
+    color: #535261;
 }
