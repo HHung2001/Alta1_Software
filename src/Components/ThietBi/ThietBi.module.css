@@ -1,9 +1,7 @@
     /* danh sach thiet bi */
     .Text h1 {
-        font-family: 'Nunito';
-        font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 20px;
         position: absolute;
         width: 38%;
         height: 81px;
@@ -11,6 +9,10 @@
         line-height: 20px;
         color: #7E7D88;
         margin-left: 212px;
+    }
+    .Text a {
+        text-decoration: none;
+        color: #FF9138;
     }
     .Text h2 {
         font-family: 'Nunito';
@@ -198,6 +200,8 @@
     /* trạng thái ngưng hoat dong */
     .conditionA{
         display: flex;
+        align-items: center;
+        margin-top: 12px;
     }
     .statusConnect{
         height: 10px;
@@ -270,22 +274,26 @@
         box-shadow: 0px 0px 6px #E7E9F2;
         border-radius: 8px 0px 0px 8px;
 }
-    .ThemTB img {
+.ThemTB img 
+{
     width: 33px;
     height: 33px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    }
-    .ThemTB a {
-        width: 72px;
-        height: 38px;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        color: #FF7506;
-        text-decoration: none;
-    }
+}
+.ThemTB a 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+
+    width: 72px;
+    height: 38px;
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF7506;
+    text-decoration: none;
+}

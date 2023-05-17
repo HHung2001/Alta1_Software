@@ -1,27 +1,19 @@
-.MenuAdd {
-    position: absolute;
-    width: 1152px;
-    height: 550px;
-    left: 224px;
-    top: 156px;
-    background: #FFFFFF;
-    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
-    border-radius: 16px;
-}
-.AddDevice h1 {
+.Title h1 {
     position: absolute;
     width: 1000px;
     height: 36px;
     left: 224px;
     top: 10px;
-    font-family: 'Nunito';
-    font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     color: #7E7D88;
 }
-.AddDevice h2 {
+.Title a {
+    text-decoration: none;
+    color: #FF9138;
+}
+.Title h2 {
     position: absolute;
     width: 1000px;
     height: 36px;
@@ -35,13 +27,24 @@
     color: #FF7506;
 }
 
-.MenuAdd Input {
+.TableInput {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    left: 224px;
+    top: 156px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.TableInput 
+input {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 270px 10px 12px;
-    gap: 10px;
     width: 530px;
     height: 44px;
     background: #FFFFFF;
@@ -51,24 +54,7 @@
     order: 1;
     flex-grow: 0;
 }
-
-.Icon {
-    color: red;
-}
-
-.Title {
-    width: 2000px;
-    height: 24px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 40px;
-    align-items: center;
-    color: #282739;
-    flex: none;
-}
-.MenuAdd p {
+.TableInput label {
     position: absolute;
     width: 160px;
     height: 30px;
@@ -82,7 +68,7 @@
     color: #FF7506;
 }
 
-.MenuAddRight {
+.TableInputRight {
     position: absolute;
     width: 540px;
     height: 76px;
@@ -90,7 +76,7 @@
     top: 66px;
 }
 
-.MenuAddLeft {
+.TableInputLeft {
     position: absolute;
     width: 540px;
     height: 76px;
@@ -98,37 +84,7 @@
     top: 66px;
 
 }
-
-.UseSevice {
-    position: absolute;
-    width: 1104px;
-    height: 76px;
-    left: 24px;
-    top: 320px;
-}
-
-.UseSevice Input {
-    width: 1093px;
-    height: 44px;
-}
-
-.Titles {
-    position: absolute;
-    width: 179px;
-    height: 21px;
-    left: 10px;
-    top: 85px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #7E7D88;
-}
-
-.MenuAddRight select {
+.TableInputRight select {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -145,7 +101,58 @@
     order: 1;
     flex-grow: 0;
 }
-.BtnCance button{
+.TableInputRight select option[disabled]:first-child {
+    color: gray;
+}
+
+.star {
+    color: red;
+}
+
+.TextBox {
+    width: 2000px;
+    height: 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    align-items: center;
+    color: #282739;
+    flex: none;
+}
+.Text1 {
+    position: absolute;
+    width: 179px;
+    height: 21px;
+    left: 10px;
+    top: 85px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7E7D88;
+}
+
+.solution {
+    position: absolute;
+    width: 1104px;
+    height: 76px;
+    left: 24px;
+    top: 320px;
+}
+
+.solution input {
+    width: 1093px;
+    height: 44px;
+}
+
+
+.ButtonHuy button
+{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -164,30 +171,22 @@
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
 }
-.BtnAdd button{
+.ButtonEquiA button
+{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 24px;
-gap: 8px;
-
-position: absolute;
-width: 147px;
-height: 48px;
-left: 837.5px;
-top: 730px;
-
-color: white;
-/* Orange/$-Orange-400 */
-
-background: #FF9138;
-/* down */
-
-box-shadow: 0px 0px 6px #E7E9F2;
-border-radius: 8px;
-border: 1.5px solid #FF9138;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    /* gap: 8px; */
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 837.5px;
+    top: 730px;
+    color: white;
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    border: 1.5px solid #FF9138;
 }
-.MenuAddRight select option[disabled]:first-child {
-    color: gray;
-  }

@@ -7,7 +7,9 @@ import Pass from './Components/Pass/Pass';
 import Infor from './Components/Infor/Infor';
 import DashBoard from './Components/DashBoard/DashBoard';
 import ThietBi from './Components/ThietBi/ThietBi';
-import ThemTB from './Components/ThietBi/ThemTB';
+import ThemTB from './Components/ThemTB/ThemTB';
+import CapNhatTB from './Components/CapNhatTB/CapNhatTB';
+import ChiTietTB from './Components/ChiTietTB/ChiTietTB';
 function App() {
   return (
     <div className='App' >
@@ -19,6 +21,8 @@ function App() {
           <Route path="/DashBoard" element={<DashBoard></DashBoard>}></Route>
           <Route path="/ThietBi" element={<ThietBi></ThietBi>}></Route>
           <Route path="/ThemTB" element={<ThemTB></ThemTB>}></Route>
+          <Route path="/CapNhatTB" element={<CapNhatTB></CapNhatTB>}></Route>
+          <Route path="/ChiTietTB" element={<ChiTietTB></ChiTietTB>}></Route>
           </Routes>
     </div>
   );

@@ -124,7 +124,7 @@ const Login = () => {
             />
           </div>
 
-          <div>
+          {/* <div>
             <Link to="/ForgotPass">
               <label className={classes.forgetPass}>
                {errorMessage ?
@@ -134,14 +134,16 @@ const Login = () => {
                 {errorMessage}</p></div>:
                <span>Quên mật khẩu?</span>
               }
-                
               </label>
             </Link>
-          </div>
+          </div> */}
+           <div className={classes.forgetPass}>
+              <Link to="/ForgotPass">Quên mật khẩu?</Link>
+            </div>
           
           
         </form>
-        <div className={classes.ButtonDN}>
+        <div className={classes.BtnLogin}>
                     <Link to="/Infor"><button>Đăng nhập</button></Link>
                 </div>
         {/* <button 
