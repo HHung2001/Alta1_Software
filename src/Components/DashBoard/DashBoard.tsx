@@ -4,9 +4,9 @@ import classes from '../DashBoard/DashBoard.module.css'
 import MenuBar from '../../Pages/MenuBar/MenuBar'
 import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
 
-const DashBoard =() => {
+const DashBoard:React.FC =() =>{
   return (
-    <div className='App'>
+    <div>
 
         <MenuBar></MenuBar>
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+
 import './App.css';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import Login from './Components/Login/Login';
@@ -10,6 +10,11 @@ import ThietBi from './Components/ThietBi/ThietBi';
 import ThemTB from './Components/ThemTB/ThemTB';
 import CapNhatTB from './Components/CapNhatTB/CapNhatTB';
 import ChiTietTB from './Components/ChiTietTB/ChiTietTB';
+import DichVu from './Components/DichVu/DichVu';
+import DichVuCapNhat from './Components/DichVuCapNhat/DichVuCapNhat';
+import DichVuThem from './Components/DichVuThem/DichVuThem';
+import DichVuChiTiet from './Components/DichVuChiTiet/DichVuChiTiet';
+
 function App() {
   return (
     <div className='App' >
@@ -23,6 +28,10 @@ function App() {
           <Route path="/ThemTB" element={<ThemTB></ThemTB>}></Route>
           <Route path="/CapNhatTB" element={<CapNhatTB></CapNhatTB>}></Route>
           <Route path="/ChiTietTB" element={<ChiTietTB></ChiTietTB>}></Route>
+          <Route path="/DV" element={<DichVu></DichVu>}></Route>
+          <Route path="/DichVuCapNhat" element={<DichVuCapNhat></DichVuCapNhat>}></Route>
+          <Route path="/DichVuThem" element={<DichVuThem></DichVuThem>}></Route>
+          <Route path="/DichVuChiTiet" element={<DichVuChiTiet></DichVuChiTiet>}></Route>
           </Routes>
     </div>
   );

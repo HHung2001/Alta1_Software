@@ -4,10 +4,20 @@
     height: 36px;
     left: 224px;
     top: 10px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 36px;
     color: #7E7D88;
+}
+.Title img{
+    padding:0 10px;
+    margin: 2px 10px;
+}
+.Title .TB{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7E7D88;
+    padding-right: 8px;
 }
 .Title a {
     text-decoration: none;

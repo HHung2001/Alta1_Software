@@ -1,6 +1,10 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  position: relative;
+  width: 1688px;
+  height: 842px;
+  background: #F7F7F7;
+  /* border-radius: 16px; */
+} 
 
 .App-logo {
   height: 40vmin;

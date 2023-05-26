@@ -1,8 +1,8 @@
 .MenuListBar {
-    position: absolute;
+    /* position: absolute; */
     box-shadow: 0px 4px 6px rgba(180, 151, 151, 0.5);
     border-radius: 16px 0px 0px 16px;
-    height: 810px;
+    height: 843px;
     width: 200px;
     top: 0px;
     left: 0px;
@@ -25,6 +25,7 @@
     margin-top: 4px;
     height: 20px;
     width: 20px;
+    left: -4px;
 }
 
 .MenuBar a {
@@ -38,8 +39,9 @@
     color: #7d7979;
 }
 .ItemDashBoard a {
-    color: #1b1b1c;
+    /* color: #1b1b1c; */
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .ItemDashBoard {
@@ -49,10 +51,12 @@
     height: 48px;
     top: 150px;
     left: 0px;
-    background: #FFFFFF;
+    
+    
 }
-.ItemDashBoard :hover{
+.ItemDashBoard:hover{
     background-color: #FF7506;
+  
 }
 /* .ItemDashBoard Link {
     text-decoration: none;
@@ -65,13 +69,23 @@
     height: 48px;
     top: 204px;
     left: 0px;
+    
 } 
-.ItemThiebi :hover{
+
+.ItemThiebi:hover{
     background-color: #FF7506;
+    
+    
 }
+/* .ItemThiebi::content
+{
+    background-color: #FF7506;
+} */
 .ItemThiebi a {
-    color: #1b1b1c;
+    /* color: #1b1b1c; */
     text-decoration: none;
+    margin-left: 20px;
+    
 }
 /* .ItemThiebi Link {
     text-decoration: none;
@@ -84,9 +98,13 @@
     top: 258px;
     left: 0px;
 } 
+.ItemDichvu:hover{
+    background-color: #FF7506;
+}
 .ItemDichvu  a {
-    color: #1b1b1c;
+    /* color: #1b1b1c; */
     text-decoration: none;
+    margin-left: 20px;
 }
 .ItemCapso {
      /* phần capso trong menubar */
@@ -96,8 +114,12 @@
     top: 312px;
     left: 0px;
 }
+.ItemCapso:hover{
+    background-color: #FF7506;
+}
 .ItemCapso a {
-    color: #1b1b1c;
+    text-decoration: none;
+    margin-left: 20px;
 }
 .ItemBaocao {
      /* phần baocao trong menubar */
@@ -108,7 +130,11 @@
     left: 0px;
 }
 .ItemBaocao  a {
-    color: #1b1b1c;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.ItemBaocao:hover{
+    background-color: #FF7506;
 }
 .ItemCaidat {
      /* phần caidat trong menubar */
@@ -119,7 +145,11 @@
     top: 420px;
 }
 .ItemCaidat a {
-    color: #1b1b1c;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.ItemCaidat:hover{
+    background-color: #FF7506;
 }
 .BtnLogout button {
      /* phần button logout trong menubar */
@@ -132,7 +162,7 @@
     line-height: 24px;
     width: 170px;
     height: 49px;
-    top: 732px;
+    top: 725px;
     left: 12px;
     background: #FFF2E7;
     border-color: #FF7506;

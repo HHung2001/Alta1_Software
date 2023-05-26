@@ -82,13 +82,19 @@
 .LoginRight{
     /* phần bên phải */
     position: absolute;
-    width: 848px;
-    height: 810px;
+    width: 1096px;
+    height: 841px;
     left: 592px;
     top: 0px;
     background: #FFFFFF;
 }
-
+.LoginRight img {
+    position: absolute;
+    width: 711px;
+    height: 560px;
+    left: 43px;
+    top: 153px;
+}
 .Title  label{
     /* phần chữ đạt lại mật khẩu */
     position: absolute;

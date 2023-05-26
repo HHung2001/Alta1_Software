@@ -1,0 +1,400 @@
+.BoxHeader h1{
+    position: absolute;
+    width: 1000px;
+    height: 36px;
+    left: 224px;
+    top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #7E7D88;
+}
+.BoxHeader img
+{
+    padding:0 10px;
+    margin: 2px 10px;
+}
+.BoxHeader .TB
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7E7D88;
+    padding-right: 8px;
+}
+.BoxHeader a
+{
+    text-decoration: none;
+    color: #FF9138;
+}
+.ThongTin {
+    position: absolute;
+    width: 370px;
+    height: 650px;
+    left: 224px;
+    top: 172px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.ThongTin label 
+{
+    position: absolute;
+    width: 162px;
+    height: 30px;
+    left: 16px;
+    top: 0px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+.ThongTinTren {
+    margin-top: 40px;
+}
+.ThongTinPhai {
+    position: absolute;
+    width: 861px;
+    height: 650px;
+    left: 618px;
+    top: 172px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 12px;
+}
+.ThongTinPhai p 
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+}
+.DichVuChiTiet h2 
+{
+    position: absolute;
+    width: 171px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+}
+
+.ThongTinDuoi label 
+{
+    position: absolute;
+    width: 136px;
+    height: 30px;
+    left: 16px;
+    top: 169px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+
+.TenDichVu  {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    align-items: center;
+    color: #282739;
+}
+.Text {
+    margin-left: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: #535261;
+}
+
+.Line {
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+
+.Number {
+    margin: 10px 20px;
+    width: 55px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px 0;
+    color: #535261;
+}
+
+.Number h4 
+{
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.Numbers {
+    margin: 10px 97px;
+    width: 55px;
+    height: 40px;
+    margin-top: 41px;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px 0;
+    color: #535261;
+}
+
+.Numbers h4{
+    margin-top: 9px;
+    font-weight: 400;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+
+}
+
+.Default {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.TextNumber {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 3px;
+    top: 342px;
+    margin-left: 20px;
+    font-weight: 400;
+
+}
+
+.DateBegin p {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 303px;
+    top: 2px;
+}
+
+.Status p{
+    position: absolute;
+    width: 74px;
+    height: 24px;
+    left: 25px;
+    top: 0px;
+}
+.Combobox select {
+    position: absolute;
+    width: 240px;
+    height: 44.15px;
+    left: 24px;
+    top: 43.85px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+.Arrow 
+{
+    position: absolute;
+    left: 439px;
+    right: 29.17%;
+    top: 55px;
+    bottom: 25%;
+}
+
+.MenuSearch 
+{
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 16px 10px 12px;
+    gap: 10px;
+    width: 211px;
+    height: 45px;
+    left: 598px;
+    top: -17px;
+}
+
+.MucLuc 
+{
+    position: absolute;
+    width: 288px;
+    height: 32px;
+    left: 573px;
+    top: 615px;
+    padding: 0px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.Connect 
+{
+    display: flex;
+}
+
+.Green 
+{
+    background-color: green;
+    margin: 18px 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.Blue 
+{ 
+    background-color: blue;
+    margin: 18px 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.Gray 
+{
+    background-color: gray;
+    margin: 18px 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.Detailstatus 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+    margin-top: 12px;
+    line-height: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #535261;
+}
+
+.TableDetails 
+{
+    position: absolute;
+    width: 812px;
+    height: 441px;
+    left: -10px;
+    top: 100px;
+    padding: 0px;
+    border-radius: 25px;
+}
+.DichVuCapNhat 
+{
+    position: absolute;
+    width: 80px;
+    height: 95px;
+    left: 1600px;
+    top: 197px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 5px 5px 20px;
+    padding: 12px 4px;
+    gap: 4px;
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    
+}
+
+.DichVuCapNhat img 
+{
+    width: 44px;
+    height: 44px;
+}
+
+.DichVuCapNhat a 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+    text-align: center;
+    width: 72px;
+    height: 38px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF7506;
+}
+.Return 
+{
+    position: absolute;
+    width: 80px;
+    height: 94px;
+    left: 1600px;
+    top: 326px;
+    padding: 12px 4px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 20px 5px 5px 20px;
+}
+
+.Return img 
+{
+    width: 35px;
+    height: 33px;
+}
+
+.Return a 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    width: 72px;
+    height: 38px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF7506;
+    text-decoration: none;
+}
+
+th 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+    border: 1px solid #FFE3CD;
+    width: 106px;
+    height: 49px;
+    background: #FF9138;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 120px;
+    padding: 0px 10px;
+}

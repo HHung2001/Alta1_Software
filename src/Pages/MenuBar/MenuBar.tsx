@@ -1,5 +1,5 @@
 import React from 'react'
-import { LoginOutlined, MoreOutlined } from '@ant-design/icons';
+import { LoginOutlined, MoreOutlined,LogoutOutlined  } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import LogoAlta from '../../assets/Image/Logo alta.png'
 import DashBoard from '../../assets/Image/dashboard.png'
@@ -19,38 +19,42 @@ const MenuBar=()=> {
       {/* phần danh sách các mục điều khiển trong bảng dashboard */}  
       <div className={classes.MenuBar}>
         <div className={classes.ItemDashBoard}>
-          <img src={DashBoard}></img>
+          
 
-          <Link to="/DashBoard"> DashBoard</Link>
+          <Link to="/DashBoard"><img src={DashBoard}></img> <a>DashBoard</a></Link>
 
         </div>
         <div className={classes.ItemThiebi}>
-          <img src={ThietBi}></img>
-          <Link to="/ThietBi"> Thiết Bị</Link>
+          
+          <Link to="/ThietBi"> <img   src={ThietBi}></img><a>Thiết Bị</a> </Link>
 
         </div>
         <div className={classes.ItemDichvu}>
-          <img src={DichVu}></img>
+          
           {/* <a>Dịch vụ</a> */}
-          <Link to="/ForgotPass"> Dịch vụ</Link>
+          <Link to="/DV"> <img src={DichVu}></img><a> Dịch vụ</a></Link>
         </div>
         <div className={classes.ItemCapso}>
-          <img src={CapSo}></img>
-          <a>Cấp số</a>
+          
+          {/* <a>Cấp số</a> */}
+          <Link to="/"> <img src={CapSo}></img> <a>Cấp số</a></Link>
         </div>
         <div className={classes.ItemBaocao}>
-          <img src={BaoCao}></img>
-          <a>Báo cáo</a>
+          
+          {/* <a>Báo cáo</a> */}
+          <Link to="/"> <img src={BaoCao}></img><a>Báo cáo</a> </Link>
         </div>
         <div className={classes.ItemCaidat}>
-          <img src={CaiDat}></img>
-          <a>Cài đặt thiết bị<MoreOutlined/></a>
+          
+          {/* <a>Cài đặt thiết bị</a> */}
+          <Link to="/"> <img src={CaiDat}></img><a>Cài đặt thiết bị<MoreOutlined/></a> </Link>
         </div>
         
          {/* button logout */}
         <div className={classes.BtnLogout}>
           <Link to="/login">
-          <button><LoginOutlined/>Đăng Xuất</button>
+          <button  >  <LogoutOutlined /> Đăng Xuất</button>
+          
           </Link>
         </div>
       </div>

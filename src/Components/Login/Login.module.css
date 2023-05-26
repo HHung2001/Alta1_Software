@@ -171,8 +171,8 @@
     } */
   .LogoRight{
       position: absolute;
-    width: 848px;
-    height: 810px;
+    width: 1096px;
+    height: 841px;
     left: 592px;
     top: 0px;
     background: #FFFFFF;
@@ -375,21 +375,29 @@
   
   /* button đăng nhập */
   .BtnLogin button{
-    /* display: flex; */
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
-    border-radius: 8px;
-    flex-direction: row;
-    font-size: 18px;
-    width: 162px;
-    height: 40px;
-    margin-top: 25px;
-    padding: 10px 24px;
-    border: 2px solid white;
-    box-shadow: 0px 0px 6px #e7e9f2;
-    background: #ff9138;
-    color: white;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 8px;
+
+position: absolute;
+width: 162px;
+height: 40px;
+left: 251px;
+top: 456px;
+
+/* Orange/$-Orange-400 */
+
+background: #FF9138;
+/* down */
+
+box-shadow: 0px 0px 6px #E7E9F2;
+border-radius: 8px;
+border-color: #FF9138;
+color:  white;
+
   }
   
   /* FORGOTPASSNEW */

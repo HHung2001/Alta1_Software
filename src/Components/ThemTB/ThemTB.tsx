@@ -14,13 +14,15 @@ const ThemTB: React.FC =() => {
     return (
         <div className={classes.EquiAdd}>
 
-            <div className={classes.header}>
+            <div className={classes.EquiAddheader}>
                 <MenuBar></MenuBar>
                 <TopMenuBar></TopMenuBar>
             </div>
             <div className={classes.Title}>
-                 <h1>Thiết bị  <img src={Vector}></img>  Danh sách thiết bị  <img src={Vector}></img> 
-                 <a href='/ThemTB'> Thêm thiết bị</a></h1>
+                 <h1>Thiết bị  <img src={Vector}></img>  <a className={classes.TB} href="/ThietBi"> Danh sách thiết bị</a>
+                 <img src={Vector}></img> 
+                      <a href='/ThemTB'> Thêm thiết bị</a> 
+                 </h1>
                  <h2>Quản lý thiết bị</h2>
             </div>
            
@@ -53,12 +55,10 @@ const ThemTB: React.FC =() => {
                         <span className={classes.TextBox}>Loại thiết bị: </span>
                         <span className={classes.star}>*</span>
 
-                        <select 
-                            id="designation" 
+                        <select
                             value={choose1} 
                             onChange={handlechooseChange}>
-                            <option disabled={true} 
-                            value="default">Chọn loại thiết bị</option>
+                            <option value="default">Chọn loại thiết bị</option>
                             <option value="one">Kiosk</option>
                             <option value="two">Display counter</option>
                         </select>

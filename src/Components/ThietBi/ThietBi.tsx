@@ -1,57 +1,66 @@
 import React from 'react'
 import { useState } from "react";
-import { Pagination } from 'antd';
-import { Input } from 'antd';
-import classes from './ThietBi.module.css'
 import MenuBar from '../../Pages/MenuBar/MenuBar'
-import { Link } from 'react-router-dom';
-import Add from '../../assets/Image/AddTB.png'
 import TopMenuBar from '../../Pages/TopBar/TopMenuBar'
+import classes from './ThietBi.module.css'
+import Add from '../../assets/Image/AddTB.png'
 import Vector from '../../assets/Image/V.png'
+import { Input } from 'antd';
+import { Link } from 'react-router-dom';
+import { Pagination } from 'antd';
 const ThietBi: React.FC =() => {
 
     const [choose1, setValue1] = useState('designation1');
-    const handlechoose1Change = (e: any) => {
+    const handlechoose1Change = (e: any) => 
+    {
         setValue1(e.target.value);
     };
 
     const [choose2, setValue2] = useState('designation2');
-    const handleSelect2Change = (e: any) => {
+    const handleSelect2Change = (e: any) => 
+    {
         setValue2(e.target.value);
     };
 
     const { Search } = Input;
-    const onSearch = (value: string) => console.log(value);
+    function onSearch(value: string) 
+    {
+        console.log(value);
+    }
     return (
         <div className={classes.Equi}>
-            <div className={classes.header}>
+            <div className={classes.Equiheader}>
                  <MenuBar></MenuBar>
-
                 <TopMenuBar></TopMenuBar>
             </div>
            
-            <div className={classes.Text}>
-            <h1>Thiết bị <img src={Vector}></img> 
-            <a href='/ThietBi'> Danh sách thiết bị</a> </h1>
-            <h2>Danh sách thiết bị</h2>
+            <div className={classes.BoxHeader}>
+                <h1>Thiết bị <img src={Vector}></img> 
+                    <a href='/ThietBi'> Danh sách thiết bị</a> 
+                </h1>
+                <h2>Danh sách thiết bị</h2>
             </div>
 
             {/* hop trang thai 1 */}
             <div className={classes.Combobox}>
-                <h2>Trạng thái hoạt động</h2>
+                {/* <h2>Trạng thái hoạt động</h2> */}
+                <label>Trạng thái hoạt động</label>
                 <select 
-                id="designation1"value={choose1} onChange={handlechoose1Change}>
+                    value={choose1} 
+                    onChange={handlechoose1Change}>
                     <option value="1">Tất cả</option>
                     <option value="2">Hoạt động</option>
                     <option value="3">Ngưng hoạt động</option>
                 </select>
 
             </div>
+
             {/* hop trang thai 2*/}
             <div className={classes.Combobox2}>
-                <h2>Trạng thái kết nối</h2>
+                <label>Trạng thái kết nối</label>
                 <select 
-                id="designation2" value={choose2} onChange={handleSelect2Change}>
+                    value={choose2} 
+                    onChange={handleSelect2Change}>
                     <option value="4">Tất cả</option>
                     <option value="5">Kết nối</option>
                     <option value="6">Mất kết nối</option>
@@ -61,277 +70,313 @@ const ThietBi: React.FC =() => {
 
             {/* thanh tim kiem */}
             <div className={classes.MenuSearch}>
-                <h2>Từ khoá</h2>
+                <label>Từ khoá</label>
                 <Search 
-                id="Search" placeholder="Nhập từ khoá" allowClear onSearch={onSearch} 
-                style={{ width: 300, height: 44}}></Search>
+                    placeholder="Nhập từ khoá" 
+                    allowClear onSearch={onSearch}>
+                    </Search>
             </div>
 
             {/* bảng số liệu */}
-            <table>
-                    <thead>
-                        <tr>
-                            {/* tựa đề bảng */}
-                            <th>Mã thiết bị</th>
+                <div className={classes.ListThietBi}>
+                    <table style={{ width: '1359px' }} >
+                        <thead  >
+                            <tr   >
+                                {/* tựa đề bảng */}
+                                <th style={{ fontSize: '18px',paddingLeft:'5px' }} >Mã thiết bị</th>
+                                <th style={{ fontSize: '18px',paddingLeft:'5px'  }} >Tên thiết bị</th>
+                                <th style={{ fontSize: '18px',paddingLeft:'5px'  }} >Địa chỉ IP</th>
+                                <th style={{ width: '150px', fontSize: '18px',paddingLeft:'5px'  }} >
+                                    Trạng thái hoạt động 
+                                </th>
+                                <th style={{ width: '134px', fontSize: '18px',paddingLeft:'5px'  }} >
+                                    Trạng thái kết nối
+                                </th>
+                                <th style={{ fontSize: '18px',paddingLeft:'5px'  }}>Dịch vụ sử dụng</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style={{ background: 'white' }} >
+                                <td>KIO_01</td>
 
-                            <th>Tên thiết bị</th>
+                                <td>Kiosk</td>
 
-                            <th>Địa chỉ IP</th>
+                                <td>192.168.1.10</td>
+                                
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectFail}></span>
+                                    <label className={classes.BoxFail}>
+                                        Ngưng hoạt động
+                                    </label>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectFalse}></span>
+                                        <label className={classes.BoxFalse}>
+                                            Mất kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt.........
+                                    </p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                    
+                                </td>
+                                <td  className={classes.link}>
+                                    {/* <Link to="/ChiTietTB">Chi tiết</Link> */}
+                                    <Link   to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                            <th>Trạng thái hoạt động</th>
+                                <td className={classes.Update}>
+                                    <Link   to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KIO_01</td>
 
-                            <th>Trạng thái kết nối</th>
+                                <td>Kiosk</td>
 
-                            <th>Dịch vụ sử dụng</th>
+                                <td>192.168.1.10</td>
 
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td>KIO_01</td>
+                                <td className={classes.conditionA}>
 
-                        <td>Kiosk</td>
+                                    <span className={classes.ConnectRight}></span>
+                                    <p className={classes.BoxRight}>
+                                        Hoạt động
+                                    </p>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectRight}></span>
+                                        <label className={classes.BoxRight}>
+                                            Kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt.........
+                                    </p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link  to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                        <td>192.168.1.10</td>
-                        
-                        <td className={classes.conditionA}>
-                            <span className={classes.Handle1}></span>
+                                <td className={classes.Update}>
+                                    <Link to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr style={{ background: 'white' }} >
+                                <td>KIO_01</td>
 
-                            <p className={classes.TextTitle}>
-                                Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
+                                <td>Kiosk</td>
 
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
+                                <td>192.168.1.10</td>
 
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                            <Link to="/ChiTietTB">Chi tiết</Link></td>
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectRight}></span>
+                                    <p className={classes.BoxRight}>
+                                        Hoạt động
+                                    </p>
+                                </td>
+                                <td>
+                                <div className={classes.conditionB}>
+                                        <span className={classes.ConnectRight}></span>
+                                        <label className={classes.BoxRight}>
+                                            Kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt........
+                                    </p>
 
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link  to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                        <td>Kiosk</td>
+                                <td className={classes.Update}>
+                                    <Link   to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KIO_01</td>
 
-                        <td>192.168.1.10</td>
+                                <td>Kiosk</td>
 
-                        <td className={classes.conditionA}>
+                                <td>192.168.1.10</td>
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectFail}></span>
 
-                            <span className={classes.actionsSuccess}></span>
-                            <p className={classes.titleSuccess}>
-                                Hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.actionsSuccess}></span>
+                                    <label className={classes.BoxFail}>
+                                        Ngưng hoạt động
+                                    </label>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectFalse}></span>
+                                        <label className={classes.BoxFalse}>
+                                            Mất kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt......
+                                    </p>
 
-                                <p className={classes.titleSuccess}>
-                                    Kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link   to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
+                                <td className={classes.Update}>
+                                    <Link   to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr style={{ background: 'white' }} >
+                                <td>KIO_01</td>
 
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
+                                <td>Kiosk</td>
 
-                        <td>Kiosk</td>
+                                <td>192.168.1.10</td>
 
-                        <td>192.168.1.10</td>
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectFail}></span>
 
-                        <td className={classes.conditionA}>
-                            <span className={classes.actionsSuccess}></span>
+                                    <label className={classes.BoxFail}>
+                                        Ngưng hoạt động
+                                    </label>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectFalse}></span>
 
-                            <p className={classes.titleSuccess}>
-                                Hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
+                                        <label className={classes.BoxFalse}>
+                                            Mất kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt........
+                                    </p>
 
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link   to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
+                                <td className={classes.Update}>
+                                    <Link  to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KIO_01</td>
 
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
+                                <td>Kiosk</td>
 
-                        <td>Kiosk</td>
+                                <td>192.168.1.10</td>
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectFail}></span>
 
-                        <td>192.168.1.10</td>
-                        <td className={classes.conditionA}>
-                            <span className={classes.Handle1}></span>
+                                    <label className={classes.BoxFail}>
+                                        Ngưng hoạt động
+                                    </label>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectFalse}></span>
 
-                            <p className={classes.TextTitle}>
-                                Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
+                                        <label className={classes.BoxFalse}>
+                                            Mất kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt........
+                                    </p>
 
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link  to="/ChiTietTB">Chi tiết</Link>
+                                </td>
 
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
+                                <td className={classes.Update}>
+                                    <Link  to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                            <tr style={{ background: 'white' }} >
+                                <td>KIO_01</td>
 
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
+                                <td>Kiosk</td>
 
-                        <td>Kiosk</td>
+                                <td>192.168.1.10</td>
 
-                        <td>192.168.1.10</td>
-
-                        <td className={classes.conditionA}>
-                            <span className={classes.Handle1}></span>
-
-                            <p className={classes.TextTitle}>
-                                Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
-
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
-
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
-
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-
-                        <td>Kiosk</td>
-
-                        <td>192.168.1.10</td>
-                        <td className={classes.conditionA}>
-                            <span className={classes.Handle1}></span>
-
-                            <p className={classes.TextTitle}>
-                                Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
-
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
-
-                            <a href="" className={classes.More}>
-                                Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
-
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-
-                        <td>Kiosk</td>
-
-                        <td>192.168.1.10</td>
-
-                        <td className={classes.conditionA}>
-                            <span className={classes.Handle1}></span>
-
-                            <p className={classes.TextTitle}>
-                                Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={classes.conditionConnect}>
-                                <span className={classes.statusConnect}></span>
-
-                                <p className={classes.Connect}>
-                                    Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={classes.Text2}>
-                                Khám tim mạch, Khám mắt</p>
-
-                            <a href="" className={classes.More}>Xem thêm</a>
-                        </td>
-                        <td className={classes.link}>
-                        <Link to="/ChiTietTB">Chi tiết</Link></td>
-
-                        <td className={classes.Update}>
-                            <Link to="/CapNhatTB">Cập nhật</Link></td>
-                    </tr>
-                </tbody>
-            </table>
-                        
+                                <td className={classes.conditionA}>
+                                    <span className={classes.ConnectFail}></span>
+                                    <label className={classes.BoxFail}>
+                                        Ngưng hoạt động
+                                    </label>
+                                </td>
+                                <td>
+                                    <div className={classes.conditionB}>
+                                        <span className={classes.ConnectFalse}></span>
+                                        <label className={classes.BoxFalse}>
+                                            Mất kết nối
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p className={classes.Text2}>
+                                        Khám tim mạch, Khám mắt......
+                                    </p>
+                                    <div className={classes.More}>
+                                        <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                </td>
+                                <td className={classes.link}>
+                                    <Link   to="/ChiTietTB">Chi tiết</Link>
+                                </td>
+                                <td className={classes.Update}>
+                                    <Link  to="/CapNhatTB">Cập nhật</Link>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                         <div className={classes.ThemTB}>
-                            <Link to='/ThemTB'><img src={Add} />Thêm Thiết Bị</Link>
+                            <Link to='/ThemTB'><img src={Add} />
+                                Thêm Thiết Bị
+                            </Link>
                         </div>
-                        <div className={classes.Phantrang}>
-                            <Pagination defaultCurrent={1} total={50} />
+                        <div className={classes.PhantrangThietBi}>
+                            <Pagination defaultCurrent={1} 
+                                total={50}></Pagination>
                         </div>
         </div>
     );

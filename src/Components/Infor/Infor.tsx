@@ -56,7 +56,7 @@ const Infor: React.FC =() =>{
             </div>
             <div className={classes.Password}>
               <p>Mật khẩu:</p>
-              <Input placeholder='hung123' />
+              <Input type='password' placeholder='hung2001' />
             </div>
             <div className={classes.vaitro}>
               <p>Vai Trò:</p>

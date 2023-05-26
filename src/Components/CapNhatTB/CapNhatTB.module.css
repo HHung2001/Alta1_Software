@@ -4,10 +4,20 @@
     height: 36px;
     left: 224px;
     top: 10px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 36px;
     color: #7E7D88;
+}
+.A img{
+    padding:0 10px;
+    margin: 2px 10px;
+}
+.A .TB{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7E7D88;
+    padding-right: 8px;
 }
 .A a {
     text-decoration: none;
@@ -18,7 +28,7 @@
     width: 1000px;
     height: 36px;
     left: 224px;
-    top: 104px;
+    top: 90px;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -98,9 +108,7 @@
     background: white;
     border-radius: 10px;
 }
-.UpdateMenuRight select:hover{
-    color: #FF9138;
-}
+
 .star {
     color: red;
 }

@@ -1,6 +1,6 @@
     /* danh sach thiet bi */
-    .Text h1 {
-        font-weight: 700;
+    .BoxHeader h1 {
+        font-weight: 500;
         font-size: 20px;
         position: absolute;
         width: 38%;
@@ -10,15 +10,18 @@
         color: #7E7D88;
         margin-left: 212px;
     }
-    .Text a {
+    .BoxHeader img{
+        padding:0 10px;
+    }
+    .BoxHeader a {
         text-decoration: none;
         color: #FF9138;
     }
-    .Text h2 {
-        font-family: 'Nunito';
-        font-style: normal;
+    .BoxHeader h2 {
+        /* font-family: 'Nunito';
+        font-style: normal; */
         font-weight: 700;
-        font-size: 25px;
+        /* font-size: 25px; */
         position: absolute;
         width: 38%;
         height: 81px;
@@ -45,12 +48,12 @@
         border: 1.5px solid #D4D4D7;
         border-radius: 8px;
     }
-    .Combobox h2 {
+    .Combobox label {
         position: absolute;
         width: 152px;
         height: 24px;
         left: 1px;
-        top: -45px;
+        top: -32px;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 600;
@@ -76,12 +79,12 @@
         border-radius: 8px;
     }
         /* hộp trạng thái kết nối */
-    .Combobox2 h2 {
+    .Combobox2 label {
         position: absolute;
         width: 126px;
         height: 24px;
         left: 548.97px;
-        top: 144px;
+        top: 156px;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 600;
@@ -117,15 +120,17 @@
         padding: 10px 16px 10px 12px;
         gap: 10px;
         position: absolute;
-        left: 1300px;
+        left: 1250px;
         top: 184px;
+        width: 326px;
+        height: 44px;
     }
-    .MenuSearch h2{
+    .MenuSearch label{
         position: absolute;
         width: 62px;
         height: 23.96px;
-        right: 256px;
-        top: -30px;
+        right: 249px;
+        top: -21px;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 600;
@@ -137,7 +142,7 @@
     table {
         position: absolute;
         overflow: hidden;
-        width: 1400px;
+        width: 1360px;
         margin: 10px 35px;
         left: 185px;
         top: 230px;
@@ -146,24 +151,32 @@
     th,td {
         text-align: left;
     }
-    .More{
-        text-decoration: none;
+    td>a{
+        font-size: 16px;
+    }
+    .More a{
+        /* text-decoration: none; */
         text-align: center;
+        color: #4277FF;
+        margin: 10px;
+        font-size: 16px;
     }
     .link{
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
+        font-size: 16px;
+    }
+    .Link a{
+        font-size: 16px;
     }
     .Update{
         text-decoration: none;
         text-align: center;
     }
     
-    td > a{
-        border-bottom: 5px ;
-    }
+  
     th {
         border: 1px solid #FFE3CD;
         width: 150px;
@@ -172,92 +185,82 @@
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         color: #FFFFFF;
     }
     .Text2 {
-        width: 191px;
+        width: 203px;
+        margin: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .Handle1{
-        margin: 5px 10px;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        background-color: red;
-    }
-    .TextTitle{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        font-family: 'Nunito';
-        font-style: normal;
-        color: #535261;
-    }
+    
+    
     /* trạng thái ngưng hoat dong */
     .conditionA{
         display: flex;
         align-items: center;
         margin-top: 12px;
     }
-    .statusConnect{
+    .ConnectFail{
+        margin: 18px 10px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+    .BoxFail{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Nunito';
+        font-style: normal;
+        color: #535261;
+    }
+
+    .conditionB{
+        display: flex;
+    }
+    .ConnectFalse{
         height: 10px;
         width: 10px;
         margin: 18px 10px;
         border-radius: 50%;
         background-color: red;
     }
-    .Connect{
+    .BoxFalse{
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 21px;
         margin-top: 12px;
         color: #535261;
     }
-    .conditionConnect{
-        display: flex;
-    }
-    .actionsSuccess{
+    
+    .ConnectRight{
         width: 10px;
         height: 10px;
         margin: 18px 10px;
         border-radius: 50%;
         background-color: green;
     }
-    .titleSuccess{
+    .BoxRight{
         font-family: 'Nunito';
         font-style: normal;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 21px;
         font-weight: 500;
         margin-top: 12px;
         color: #535261;
     }
-    .Phantrang{
-        position: absolute;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-        padding: 5px;
-        width: 288px;
-        height: 32px;
-        left: 1300px;
-        top: 55rem;
-        /* color: #FF7506;
-        border-color: orange; */
-        /* background-color: rgb(203, 199, 194); */
-        border-radius: 5px;
-        /* background: #FF7506; */
-    }
+   
     tr:nth-child(2n) {
         background-color: #FFF2E7;
     }
-        .ThemTB 
+    .ThemTB 
     {
         display: flex;
         flex-direction: column;
@@ -267,8 +270,8 @@
         gap: 4px;
         position: absolute;
         width: 80px;
-        height: 94px;
-        left: 1636px;
+        height: 100px;
+        left: 1598px;
         top: 244px;
         background: #FFF2E7;
         box-shadow: 0px 0px 6px #E7E9F2;
@@ -296,4 +299,28 @@
     text-align: center;
     color: #FF7506;
     text-decoration: none;
+}
+.PhantrangThietBi{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    width: 288px;
+    height: 32px;
+    left: 1287px;
+    top: 50rem;
+    /* color: #FF7506;
+    border-color: orange; */
+    /* background-color: rgb(203, 199, 194); */
+    border-radius: 5px;
+    /* background: #FF7506; */
+}
+td>a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 21px; */
+    border-bottom: 1px solid blue;
+    color: #4277FF;
 }
