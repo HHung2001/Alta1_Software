@@ -18,7 +18,7 @@ const detail:React.FC = ()=> {
                     <img src={Vector}></img>  
                       <a className={classes.TB} href="/ThietBi"> Danh sách thiết bị</a>  
                     <img src={Vector}></img> 
-                      <a href='/ChiTietTB'> Chi tiết thiết bị</a>
+                      <a href='/ChiTietTB'> Chi tiết thiết bị </a>
                   </h1>
                  <h2>Quản lý thiết bị</h2>
               </div>

@@ -3,7 +3,7 @@
     box-shadow: 0px 4px 6px rgba(180, 151, 151, 0.5);
     border-radius: 16px 0px 0px 16px;
     height: 843px;
-    width: 200px;
+    width: 203px;
     top: 0px;
     left: 0px;
     background: #FFFFFF;
@@ -27,6 +27,8 @@
     width: 20px;
     left: -4px;
 }
+
+
 
 .MenuBar a {
     /* phần toàn thẻ a trong menubar */
@@ -54,12 +56,17 @@
     
     
 }
-.ItemDashBoard:hover{
-    background-color: #FF7506;
-  
+.ItemDashBoard:hover {
+    background-color: #FFF2E7;
+    left: 3px;
 }
-/* .ItemDashBoard Link {
-    text-decoration: none;
+
+.ItemDashBoard:hover a  {
+    color: orange;
+}
+
+/* .ItemDashBoard:hover:focus {
+    background-color: #FF7506;
 } */
 
 .ItemThiebi {
@@ -73,9 +80,12 @@
 } 
 
 .ItemThiebi:hover{
-    background-color: #FF7506;
+    background-color: #FFF2E7;
+    left: 3px;
     
-    
+}
+.ItemThiebi:hover a  {
+    color: orange;
 }
 /* .ItemThiebi::content
 {
@@ -99,12 +109,16 @@
     left: 0px;
 } 
 .ItemDichvu:hover{
-    background-color: #FF7506;
+    background-color: #FFF2E7;
+    left: 3px;
 }
 .ItemDichvu  a {
     /* color: #1b1b1c; */
     text-decoration: none;
     margin-left: 20px;
+}
+.ItemDichvu:hover a  {
+    color: orange;
 }
 .ItemCapso {
      /* phần capso trong menubar */
@@ -115,11 +129,15 @@
     left: 0px;
 }
 .ItemCapso:hover{
-    background-color: #FF7506;
+    background-color: #FFF2E7;
+    left: 3px;
 }
 .ItemCapso a {
     text-decoration: none;
     margin-left: 20px;
+}
+.ItemCapso:hover a  {
+    color: orange;
 }
 .ItemBaocao {
      /* phần baocao trong menubar */
@@ -134,7 +152,11 @@
     margin-left: 20px;
 }
 .ItemBaocao:hover{
-    background-color: #FF7506;
+    background-color: #FFF2E7;
+    left: 3px;
+}
+.ItemBaocao:hover a  {
+    color: orange;
 }
 .ItemCaidat {
      /* phần caidat trong menubar */
@@ -149,7 +171,41 @@
     margin-left: 20px;
 }
 .ItemCaidat:hover{
-    background-color: #FF7506;
+    background-color: #FFF2E7;
+    left: 3px;
+    
+}
+.ItemCaidat:hover a  {
+    color: orange;
+}
+.DetailEqui8 {
+    position: absolute;
+    width: 181px;
+    height: 73px;
+    left: 3px;
+    top: 48px;
+    background: white;
+    border-radius: 16px ;
+    box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+   opacity: 0;
+   filter: alpha(opacity=50);
+   border: 1px solid #FFC89B
+}
+.DetailEqui8:hover {
+    opacity: 1.0; 
+     filter: alpha(opacity=100);
+}
+.DetailEqui8 a {
+    text-decoration: none;
+}
+.L1:hover{
+    background-color: #FFF2E7;
+}
+.L2:hover{
+    background-color: #FFF2E7;
+}
+.L3:hover{
+    background-color: #FFF2E7;
 }
 .BtnLogout button {
      /* phần button logout trong menubar */

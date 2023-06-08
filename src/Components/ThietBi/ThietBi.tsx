@@ -86,10 +86,10 @@ const ThietBi: React.FC =() => {
                                 <th style={{ fontSize: '18px',paddingLeft:'5px' }} >Mã thiết bị</th>
                                 <th style={{ fontSize: '18px',paddingLeft:'5px'  }} >Tên thiết bị</th>
                                 <th style={{ fontSize: '18px',paddingLeft:'5px'  }} >Địa chỉ IP</th>
-                                <th style={{ width: '150px', fontSize: '18px',paddingLeft:'5px'  }} >
+                                <th style={{ width: '187px', fontSize: '18px',paddingLeft:'5px'  }} >
                                     Trạng thái hoạt động 
                                 </th>
-                                <th style={{ width: '134px', fontSize: '18px',paddingLeft:'5px'  }} >
+                                <th style={{ width: '163px', fontSize: '18px',paddingLeft:'5px'  }} >
                                     Trạng thái kết nối
                                 </th>
                                 <th style={{ fontSize: '18px',paddingLeft:'5px'  }}>Dịch vụ sử dụng</th>
@@ -125,6 +125,10 @@ const ThietBi: React.FC =() => {
                                     </p>
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                    <div className={classes.DetailEqui8}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
                                     </div>
                                     
                                 </td>
@@ -166,6 +170,10 @@ const ThietBi: React.FC =() => {
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
                                     </div>
+                                    <div className={classes.DetailEqui7}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
+                                    </div>
                                 </td>
                                 <td className={classes.link}>
                                     <Link  to="/ChiTietTB">Chi tiết</Link>
@@ -204,6 +212,10 @@ const ThietBi: React.FC =() => {
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
                                     </div>
+                                    <div className={classes.DetailEqui6}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
+                                    </div>
                                 </td>
                                 <td className={classes.link}>
                                     <Link  to="/ChiTietTB">Chi tiết</Link>
@@ -241,6 +253,10 @@ const ThietBi: React.FC =() => {
 
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
+                                    </div>
+                                    <div className={classes.DetailEqui5}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
                                     </div>
                                 </td>
                                 <td className={classes.link}>
@@ -282,6 +298,10 @@ const ThietBi: React.FC =() => {
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
                                     </div>
+                                    <div className={classes.DetailEqui4}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
+                                    </div>
                                 </td>
                                 <td className={classes.link}>
                                     <Link   to="/ChiTietTB">Chi tiết</Link>
@@ -321,6 +341,10 @@ const ThietBi: React.FC =() => {
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
                                     </div>
+                                    <div className={classes.DetailEqui3}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi </p></Link>
+                                    </div>
                                 </td>
                                 <td className={classes.link}>
                                     <Link  to="/ChiTietTB">Chi tiết</Link>
@@ -358,7 +382,12 @@ const ThietBi: React.FC =() => {
                                     <div className={classes.More}>
                                         <Link to="/ChiTietTB">Xem thêm</Link>
                                     </div>
+                                    <div className={classes.DetailEqui2}>                                     
+                                        <Link to="/ChiTietTB"><p style={{ marginLeft:'5px'}}  >Khám tim mạch, Khánh Sản - Phụ khoa, Khám răng hàm mặt,
+                                           Khám tai mũi họng,Khám hô hấp,Khám tổng quát</p></Link>
+                                    </div>
                                 </td>
+                                
                                 <td className={classes.link}>
                                     <Link   to="/ChiTietTB">Chi tiết</Link>
                                 </td>
@@ -371,7 +400,7 @@ const ThietBi: React.FC =() => {
                 </div>
                         <div className={classes.ThemTB}>
                             <Link to='/ThemTB'><img src={Add} />
-                                Thêm Thiết Bị
+                                Thêm thiết bị
                             </Link>
                         </div>
                         <div className={classes.PhantrangThietBi}>

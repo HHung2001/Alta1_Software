@@ -32,20 +32,24 @@ const Infor: React.FC =() =>{
             <img src={Camera}></img>
           </div>
           <div className={classes.MyName}>
-            <p>Ôn Việt Hùng</p>
+          <p>Ôn Việt Hùng</p>
+            
           </div>
           <div className={classes.BoxInforLeft}>
             <div className={classes.NameofUser}>
               <p>Tên người dùng:</p>
               <Input placeholder='Ôn Việt Hùng' />
+              
             </div>
             <div className={classes.Numberphone}>
               <p>Số điện thoại:</p>
               <Input placeholder='0932558455' />
+              
             </div>
             <div className={classes.Emailofuser}>
               <p>Email:</p>
               <Input placeholder='onviethung@gmail.com' />
+             
             </div>
 
           </div>
@@ -53,14 +57,16 @@ const Infor: React.FC =() =>{
             <div className={classes.LoginName}>
               <p>Tên đăng nhập:</p>
               <Input placeholder='viethung' />
+             
             </div>
             <div className={classes.Password}>
               <p>Mật khẩu:</p>
               <Input type='password' placeholder='hung2001' />
+         
             </div>
             <div className={classes.vaitro}>
               <p>Vai Trò:</p>
-              <Input placeholder='người dùng' />
+              <Input placeholder='Intern Frontend' />
             </div>
           </div>
         </div>

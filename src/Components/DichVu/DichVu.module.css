@@ -128,9 +128,10 @@ td>a {
 }
 /* chi tiết */
 .DetailsDichVu {
-    display: flex;
-    justify-content: center;
+
+
     color: #4277FF;
+    text-align: center;
 }
 /* cập nhật */
 .UpdateDichVu {
@@ -234,7 +235,7 @@ th,td{
     width: 288px;
     height: 32px;
     left: 1301px;
-    top: 758px;
+    top: 795px;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -244,7 +245,7 @@ th,td{
 .Arrow{
     position: absolute;
     left: 43%;
-    top: 24%;
+    top: 21%;
 }
 .DateBegin p{
     position: absolute;   

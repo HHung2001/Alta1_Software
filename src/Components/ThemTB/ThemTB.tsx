@@ -21,7 +21,7 @@ const ThemTB: React.FC =() => {
             <div className={classes.Title}>
                  <h1>Thiết bị  <img src={Vector}></img>  <a className={classes.TB} href="/ThietBi"> Danh sách thiết bị</a>
                  <img src={Vector}></img> 
-                      <a href='/ThemTB'> Thêm thiết bị</a> 
+                      <a href='/ThemTB'> Thêm thiết bị </a> 
                  </h1>
                  <h2>Quản lý thiết bị</h2>
             </div>
@@ -89,7 +89,7 @@ const ThemTB: React.FC =() => {
             </div>
             <div className={classes.ButtonHuy}>
             <Link to='/ThietBi'>
-            <button type='button' >Huỷ</button>
+            <button type='button' >Huỷ bỏ</button>
             </Link>
             </div>
 

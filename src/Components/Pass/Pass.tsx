@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import {   useParams , useNavigate} from "react-router-dom";
 import { ref, update } from '@firebase/database';
-import { database } from '../../firebase';
+// import { database } from '../../firebase';
  
 interface User{
     userName: string;
@@ -22,12 +22,12 @@ const SetPass: React.FC =() =>
     const navigate = useNavigate();
     const { userId } = useParams<{ userId: string }>();
 
-    const handleSetPassword = () => {
-        update(ref(database,`users/${userId}`),{
-            password:password,
-        });
-        navigate('/Login');
-    };
+    // const handleSetPassword = () => {
+    //     update(ref(database,`users/${userId}`),{
+    //         password:password,
+    //     });
+    //     navigate('/Login');
+    // };
     //React.useState('');
     const [password,setPassword] = useState('');
 
@@ -82,11 +82,11 @@ const SetPass: React.FC =() =>
 
                         </div>
                     <div className={classes.BtnConfrim}> 
-                    <button type="submit" onClick={handleSetPassword}>
+                    {/* <button type="submit" >
                         Xác nhận
-                        </button>
+                        </button> */}
 
-                    {/* <Link to='/Login'><button type='button' >Xác nhận</button></Link> */}
+                    <Link to='/Login'><button type='button' >Xác nhận</button></Link>
                             {/* <button type='button' >Xác nhận</button> */}
                     </div>
                 </div>

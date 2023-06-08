@@ -20,7 +20,7 @@
     .BoxHeader h2 {
         /* font-family: 'Nunito';
         font-style: normal; */
-        font-weight: 700;
+        font-weight: 500;
         /* font-size: 25px; */
         position: absolute;
         width: 38%;
@@ -146,7 +146,7 @@
         margin: 10px 35px;
         left: 185px;
         top: 230px;
-        border-radius: 12px;
+        border-radius: 30px;
     }
     th,td {
         text-align: left;
@@ -160,7 +160,154 @@
         color: #4277FF;
         margin: 10px;
         font-size: 16px;
+        /* opacity: 0.5; */
+        /* filter: alpha(opacity=50); */
     }
+    /* .More a:hover{
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    } */
+    .DetailEqui2 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 488px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui2:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui2 a {
+        text-decoration: none;
+    }
+    .DetailEqui3 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 415px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui3:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui3 a {
+        text-decoration: none;
+    }
+    .DetailEqui4 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 342px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui4:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui4 a {
+        text-decoration: none;
+    }
+    .DetailEqui5 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 269px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui5:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui5 a {
+        text-decoration: none;
+    }
+    .DetailEqui6 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 196px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui6:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui6 a {
+        text-decoration: none;
+    }
+    .DetailEqui7 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 123px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui7:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui7 a {
+        text-decoration: none;
+    }
+    .DetailEqui8 {
+        position: absolute;
+        width: 285px;
+        height: 67px;
+        left: 833px;
+        top: 52px;
+        background: white;
+        border-radius: 16px ;
+        box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.8);
+       opacity: 0;
+       filter: alpha(opacity=50);
+       border: 1px solid #FFC89B
+    }
+    .DetailEqui8:hover {
+        opacity: 1.0; 
+         filter: alpha(opacity=100);
+    }
+    .DetailEqui8 a {
+        text-decoration: none;
+    }
+  
     .link{
         display: flex;
         height: 100%;

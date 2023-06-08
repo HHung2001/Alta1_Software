@@ -4,12 +4,12 @@
     height: 36px;
     left: 224px;
     top: 10px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     color: #7E7D88;
-    font-style: normal;
-    font-family: 'Nunito';
+    /* font-style: normal;
+    font-family: 'Nunito'; */
 }
 .LinkPage img{
     padding:0 10px;

@@ -69,6 +69,7 @@ const DichVuCapNhat:React.FC =()=>
                                 placeholder="Mô tả dịch vụ"
                                 onChange={ClickChange}
                                 style={{resize: 'none' }}
+                                
                             ></TextArea>
                         </div>
                     </div>
@@ -134,12 +135,12 @@ const DichVuCapNhat:React.FC =()=>
                     <div className={classes.Button}>
                         <div className={classes.ButtonHuy}>
                                 <Link to='/DV'>  
-                                    <button type='button'>Huỷ bỏ</button>
+                                    <button type='button'>Huỷ bỏ </button>
                                 </Link>
                             </div>
                             <div className={classes.ButtonCapnhat}>
                                 <Link to='/DV'>
-                                    <button type='button'>Cập nhập dịch vụ</button>
+                                    <button type='button'>Cập nhập dịch vụ </button>
                                 </Link>
                             </div>
                     </div>                           

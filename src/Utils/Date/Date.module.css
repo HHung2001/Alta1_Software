@@ -35,10 +35,10 @@
 
 .Date img 
 {
-    width: 1000px;
-    height: 1000px;
-/*   
+    width: 10px;
+    height: 10px;
+  
     flex: none;
     order: 0;
-    flex-grow: 0; */
+    flex-grow: 0;
 }

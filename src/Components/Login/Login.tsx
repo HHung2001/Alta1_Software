@@ -9,9 +9,10 @@ import { faEyeSlash, faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // import { Button, Input, Space } from 'antd';
-import { database } from '../../firebase';
+// import { database } from '../../firebase';
 import { child, get, ref } from 'firebase/database';
 import waring from "../../assets/Image/warning.png";
+// import { getAuth, signInWithEmailAndPassword,createUserWithEmailAndPassword } from "firebase/auth";
 // interface User{
 //   userName: string;
 //   password: string;
@@ -33,6 +34,7 @@ import waring from "../../assets/Image/warning.png";
 const Login = () => {
   const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  // const [error, seterror] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   //thanh điều hướng
   const navigate = useNavigate();
@@ -81,6 +83,25 @@ const Login = () => {
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value);
   };
+
+  // const handleLogin = () => {
+  //   const auth = getAuth();
+  //  signInWithEmailAndPassword(auth, userName, password)
+  //   .then((userCredential) => {
+  //     // Signed in 
+  //     const user = userCredential.user;
+  //     console.log(user)
+  //     navigate("/Infor")
+  //     // ...
+  //   })
+  //   .catch((error) => {
+  //     const errorCode = error.code;
+  //     const errorMessage = error.message;
+  //     seterror(errorMessage)
+  //     console.log(errorMessage)
+
+  //   });
+  // }
 
   return (
     <div className={classes.login}>
@@ -137,6 +158,7 @@ const Login = () => {
               </label>
             </Link>
           </div> */}
+          {/* {<span className={classes.forgetPass}>{errorMessage}</span>} */}
            <div className={classes.forgetPass}>
               <Link to="/ForgotPass">Quên mật khẩu?</Link>
             </div>
@@ -144,7 +166,7 @@ const Login = () => {
           
         </form>
         <div className={classes.BtnLogin}>
-                    <Link to="/Infor"><button>Đăng nhập</button></Link>
+                    <Link to="/DashBoard"><button>Đăng nhập</button></Link>
                 </div>
         {/* <button 
         className={classes.ButtonDN} type="submit">

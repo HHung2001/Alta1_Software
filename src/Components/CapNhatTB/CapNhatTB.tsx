@@ -24,7 +24,7 @@ const UpdateTB: React.FC =() => {
                     <img src={Vector}></img>  
                         <a className={classes.TB} href="/ThietBi"> Danh sách thiết bị</a>
                     <img src={Vector}></img> 
-                        <a href='/CapNhatTB'> Cập nhật thiết bị</a>
+                        <a href='/CapNhatTB'> Cập nhật thiết bị </a>
                 </h1>
                 <h2>Quản lý thiết bị</h2>
             </div>
@@ -111,14 +111,14 @@ const UpdateTB: React.FC =() => {
                 <div className={classes.UpdateButtonLeft}>
                     <div className={classes.Button}>
                         <Link to='/ThietBi'>  
-                            <button type='button'>Huỷ</button>
+                            <button type='button'>Huỷ bỏ</button>
                         </Link>
                     </div>
                 </div>
                 <div className={classes.UpdateButtonRight}>
                     <div className={classes.ButtonUpdate}>
                         <Link to='/ThietBi'>
-                            <button type='button'>Cập nhập thiết bị</button>
+                            <button type='button'>Cập nhập thiết bị </button>
                         </Link>
                     </div>
                 </div>

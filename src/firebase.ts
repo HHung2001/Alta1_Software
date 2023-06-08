@@ -1,23 +1,25 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/database';
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCDreY2YScLhGqjBTKwtJdT9HNA1vsROd0",
-  authDomain: "alta-project-7065f.firebaseapp.com",
-  projectId: "alta-project-7065f",
-  storageBucket: "alta-project-7065f.appspot.com",
-  messagingSenderId: "139563659757",
-  appId: "1:139563659757:web:1b9937a2d60f9303f8f7e4"
+  apiKey: "AIzaSyB8U_f6Blb3ggBGo8XTA4lUqZFWzS5eGmU",
+  authDomain: "tast-f8ffc.firebaseapp.com",
+  projectId: "tast-f8ffc",
+  storageBucket: "tast-f8ffc.appspot.com",
+  messagingSenderId: "111507229719",
+  appId: "1:111507229719:web:ac37b8421fe47d06f56052",
+  measurementId: "G-Z1376NFQ0S"
 };
 
 // Initialize Firebase
 //export const app = initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
-export const database = firebase.database();
+export const db = firebase.firestore();
+
 export default firebase;
 // const database = getDatabase(app);

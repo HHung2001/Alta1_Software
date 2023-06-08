@@ -1,0 +1,239 @@
+.Title h1 {
+    position: absolute;
+    width: 1000px;
+    height: 36px;
+    left: 224px;
+    top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #7E7D88;
+}
+.Title img{
+    padding:0 10px;
+    margin: 2px 10px;
+}
+.Title .TB{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7E7D88;
+    padding-right: 8px;
+}
+.Title a {
+    text-decoration: none;
+    color: #FF9138;
+}
+.Title h2 {
+    position: absolute;
+    width: 1000px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+}
+
+.TableInput {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    left: 224px;
+    top: 156px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.TableInput 
+input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 270px 10px 12px;
+    width: 530px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.TableInput label {
+    position: absolute;
+    width: 171px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+
+.TableInputRight {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 588px;
+    top: 66px;
+}
+.TableInputRight2 {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: -3px;
+    top: 251px;
+}
+.TableInputLeft {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 24px;
+    top: 66px;
+
+}
+.TableInputRight select {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 24px;
+    width: 530px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.TableInputRight2 select{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 24px;
+    width: 530px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.TableInputRight select option[disabled]:first-child {
+    color: gray;
+}
+.TableInputRight2 select option[disabled]:first-child {
+    color: gray;
+}
+.star {
+    color: red;
+}
+
+.TextBox {
+    width: 2000px;
+    height: 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    align-items: center;
+    color: #282739;
+    flex: none;
+}
+.Text1 {
+    position: absolute;
+    width: 179px;
+    height: 21px;
+    left: 10px;
+    top: 336px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7E7D88;
+}
+
+.solution {
+    position: absolute;
+    width: 1104px;
+    height: 76px;
+    left: 24px;
+    top: 320px;
+}
+
+.solution input {
+    width: 1093px;
+    height: 44px;
+}
+
+
+.ButtonHuy button
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 634.5px;
+    top: 673px;
+    color: #FF9138;
+    background: #FFF2E7;
+    border: 1.5px solid #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+.ButtonEquiA button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    /* gap: 8px; */
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 837.5px;
+    top: 673px;
+    color: white;
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    border: 1.5px solid #FF9138;
+}
+.eyes{
+    position: absolute;
+    left: 500px;
+    top: 220px;
+    cursor: pointer;
+}
+.eyes2{
+    position: absolute;
+    left: 500px;
+    top: 135px;
+    cursor: pointer;
+}

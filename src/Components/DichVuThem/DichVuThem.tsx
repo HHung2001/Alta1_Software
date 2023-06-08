@@ -67,6 +67,7 @@ const DichVuCapNhat:React.FC =()=>
                                 placeholder="Mô tả dịch vụ"
                                 onChange={ClickChange}
                                 style={{resize: 'none' }}
+                               
                             />
                         </div>
                     </div>

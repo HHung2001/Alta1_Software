@@ -1,0 +1,421 @@
+    /* danh sach thiet bi */
+    .BoxHeader h1 {
+        font-weight: 500;
+        font-size: 20px;
+        position: absolute;
+        width: 38%;
+        height: 81px;
+        top: 10px;
+        line-height: 20px;
+        color: #7E7D88;
+        margin-left: 212px;
+    }
+    .BoxHeader img{
+        padding:0 10px;
+    }
+    .BoxHeader a {
+        text-decoration: none;
+        color: #FF9138;
+    }
+    .BoxHeader h2 {
+        /* font-family: 'Nunito';
+        font-style: normal; */
+        font-weight: 700;
+        /* font-size: 25px; */
+        position: absolute;
+        width: 38%;
+        height: 81px;
+        top: 104px;
+        line-height: 20px;
+        color: #FF7506;
+        margin-left: 212px;
+    }
+       /* hộp trạng thái hoạt động */
+    .Combobox {
+        position: absolute;
+        width: 177px;
+        height: 44px;
+        left: 224px;
+        top: 184px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        /* gap: 24px; */
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D7;
+        border-radius: 8px;
+    }
+    .Combobox label {
+        position: absolute;
+        width: 152px;
+        height: 24px;
+        left: 1px;
+        top: -32px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    .Combobox select {
+        position: absolute;
+        width: 177px;
+        height: 44px;
+        left: 0px;
+        top: 0px;
+        size: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        background: #FFFFFF;
+        border: 1.5px solid #FFAC6A;
+        border-radius: 8px;
+    }
+    
+        /* hộp trạng thái kết nối */
+    .Combobox2 label {
+        position: absolute;
+        width: 126px;
+        height: 24px;
+        left: 418px;
+        top: 156px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    .Combobox2 select {
+        position: absolute;
+        width: 177px;
+        height: 44px;
+        left: 414px;
+        top: 184px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        size: 30px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1.5px solid #FFAC6A;
+    }
+    .Combobox3 label {
+        position: absolute;
+        width: 126px;
+        height: 24px;
+        left: 605px;
+        top: 156px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    .Combobox3 select {
+        position: absolute;
+        width: 177px;
+        height: 44px;
+        left: 605px;
+        top: 184px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        size: 30px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1.5px solid #FFAC6A;
+    }
+    /* search */
+    .MenuSearch {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px 10px 12px;
+        gap: 10px;
+        position: absolute;
+        left: 1250px;
+        top: 184px;
+        width: 326px;
+        height: 44px;
+    }
+    .MenuSearch label{
+        position: absolute;
+        width: 62px;
+        height: 23.96px;
+        right: 249px;
+        top: -21px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    /* bang */
+    table {
+        position: absolute;
+        overflow: hidden;
+        width: 1360px;
+        margin: 10px 35px;
+        left: 185px;
+        top: 230px;
+        border-radius: 24px;
+    }
+    th,td {
+        text-align: left;
+    }
+    td>a{
+        font-size: 16px;
+    }
+    .More a{
+        /* text-decoration: none; */
+        text-align: center;
+        color: #4277FF;
+        margin: 10px;
+        font-size: 16px;
+    }
+    .link{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    .Link a{
+        font-size: 16px;
+    }
+    .Update{
+        text-decoration: none;
+        text-align: center;
+    }
+    
+  
+    th {
+        border: 1px solid #FFE3CD;
+        width: 150px;
+        height: 49px;
+        background: #FF9138;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .Text2 {
+        width: 203px;
+        margin: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .Text3{
+        width: 55px;
+        margin: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: -37px;
+    }
+    
+    /* trạng thái ngưng hoat dong */
+    .conditionA{
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .ConnectFail{
+        margin: 18px 10px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+    .BoxFail{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Nunito';
+        font-style: normal;
+        color: #535261;
+        margin-left: 11%;
+    }
+
+    .conditionB{
+        display: flex;
+    }
+    .ConnectFalse{
+        height: 10px;
+        width: 10px;
+        margin: 18px 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .BoxFalse{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 12px;
+        color: #535261;
+        margin: 4px;
+        margin-top: 13px;
+    }
+    
+    .ConnectRight{
+        width: 10px;
+        height: 10px;
+        margin: 18px 10px;
+        border-radius: 50%;
+        background-color: green;
+    }
+    .BoxRight{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+        margin-top: 12px;
+        color: #535261;
+        margin-left: 11%;
+    }
+   
+    tr:nth-child(2n) {
+        background-color: #FFF2E7;
+    }
+    .ThemTB 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 4px;
+        gap: 4px;
+        position: absolute;
+        width: 80px;
+        height: 100px;
+        left: 1598px;
+        top: 244px;
+        background: #FFF2E7;
+        box-shadow: 0px 0px 6px #E7E9F2;
+        border-radius: 8px 0px 0px 8px;
+}
+.ThemTB img 
+{
+    width: 33px;
+    height: 33px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.ThemTB a 
+{
+    font-family: 'Nunito';
+    font-style: normal;
+
+    width: 46px;
+    height: 38px;
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF7506;
+    text-decoration: none;
+}
+.PhantrangThietBi{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    width: 288px;
+    height: 32px;
+    left: 1287px;
+    top: 56rem;
+    /* color: #FF7506;
+    border-color: orange; */
+    /* background-color: rgb(203, 199, 194); */
+    border-radius: 5px;
+    /* background: #FF7506; */
+}
+td>a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 21px; */
+    border-bottom: 1px solid blue;
+    color: #4277FF;
+}
+td{
+    padding-left: 10px;
+}
+.Connect {
+    display: flex;
+}
+.Green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4277FF;
+    margin: 18px 10px;
+}
+.Gray{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:  #7E7D88;
+    margin: 18px 10px;
+}
+.red{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:  red;
+    margin: 18px 10px;
+}
+.available {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #535261;
+    margin-top: 12px;
+}
+.DateBegin p{
+    position: absolute;   
+    font-family: 'Nunito';
+    font-style: normal;
+    width: 106px;
+    height: 24px;
+    left: 803px;
+    top: 143px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739; 
+}
+.Arrow{
+    position: absolute;
+    left: 58%;
+    top: 21%
+}

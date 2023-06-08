@@ -12,7 +12,7 @@ const DatePickerProps = () => {
   };
   return (
     <div className={classes.Date}>  
-      <img src={Calendar}></img>
+      {/* <img src={Calendar}></img> */}
       <DatePicker  
           showIcon
           selected={startDate}
