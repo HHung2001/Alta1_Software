@@ -81,19 +81,18 @@
     opacity: 1.0; 
      filter: alpha(opacity=100);
 }
-.DetailEqui2s {
+.DetailEqui2ss {
     position: absolute;
     width: 360px;
     height: 48px;
     left: 0px;
     top: -1px;
     background: orange;
-
     border-radius: 16px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-.DetailEqui2s h2{
+.DetailEqui2ss h2{
     font-family: 'Nunito';
     font-style: normal;
 

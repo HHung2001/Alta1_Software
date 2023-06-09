@@ -14,7 +14,7 @@ const TopBar = () => {
             {/* dẫn tới trang infor */}
             <Link to='/Infor'> <img src={Avatar}></img></Link>
             <div className={classes.DetailEqui}>
-                <div className={classes.DetailEqui2s}>
+                <div className={classes.DetailEqui2ss}>
                   <h2  >Thông báo</h2>
                 </div>
                 <div className={classes.Header} >
